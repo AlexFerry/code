@@ -34,10 +34,10 @@ addEventButton({
   },
   category: "cat_events",
 }, async function () {
-  for (let ping = 140; ping <= 146; ping++) {
+  for (let pig = 140; pig <= 146; pig++) {
     netManager.send("act.act_autumn_pig_find_c2s", {
       act_type: 2113,
-      ping_id: ping,
+      pig_id: pig,
     });
 
     await sleep(300);
