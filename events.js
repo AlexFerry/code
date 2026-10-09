@@ -8,7 +8,7 @@ addEventButton({
 }, async function () {
   for (let chapter = 1; chapter <= 7; chapter++) {
 
-    netManager.send("act.act_mini_game_result_c2s ", {
+    netManager.send("act.act_mini_game_result_c2s", {
       act_type: 1076,
       chapter_id: chapter,
       result: 1,
