@@ -1,5 +1,5 @@
 addEventButton({
-  id: "evento-2",
+  id: "evento-1",
   label: {
     pt: "Serpente",
     en: "Snake",
