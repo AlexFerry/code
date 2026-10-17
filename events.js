@@ -18,6 +18,7 @@ addEventButton({
   }
 });
 
+// pig button
 addEventButton({
   id: "evento-4",
   label: {
@@ -26,14 +27,13 @@ addEventButton({
   },
   category: "cat_events",
 }, async function () {
-  for (let ping = 137; ping <= 144; ping++) {
-
+  for (let pig = 139; pig <= 146; pig++) {
     netManager.send("act.act_autumn_pig_find_c2s", {
       act_type: 1082,
-      pig_id: ping,
+      pig_id: pig,
     });
 
-    await sleep(500);
+    await sleep(300);
   }
 });
 
