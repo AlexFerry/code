@@ -27,7 +27,7 @@ addEventButton({
   },
   category: "cat_events",
 }, async function () {
-  for (let pig = 139; pig <= 146; pig++) {
+  for (let pig = 146; pig <= 153; pig++) {
     netManager.send("act.act_autumn_pig_find_c2s", {
       act_type: 1082,
       pig_id: pig,
