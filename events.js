@@ -18,7 +18,6 @@ addEventButton({
   }
 });
 
-// ursos
 addEventButton({
   id: "evento-4",
   label: {
