@@ -1,15 +1,15 @@
 addEventButton({
   id: "evento-3",
   label: {
-    pt: "Casa do Glutão",
-    en: "Gluttons House",
+    pt: "Identificação do boneco",
+    en: "Doll identification",
   },
   category: "cat_events",
 }, async function () {
   for (let chapter = 1; chapter <= 7; chapter++) {
 
     netManager.send("act.act_mini_game_result_c2s", {
-      act_type: 1081,
+      act_type: 2125,
       chapter_id: chapter,
       result: 1,
     });
@@ -18,38 +18,20 @@ addEventButton({
   }
 });
 
-// pig button
+// ursos
 addEventButton({
   id: "evento-4",
   label: {
-    pt: "Espirito Lanterna",
-    en: "Lantern Spirit",
+    pt: "Ursinho",
+    en: "Teddy bear",
   },
   category: "cat_events",
 }, async function () {
-  for (let pig = 146; pig <= 153; pig++) {
-    netManager.send("act.act_autumn_pig_find_c2s", {
-      act_type: 1082,
-      pig_id: pig,
-    });
-
-    await sleep(300);
-  }
-});
-
-addEventButton({
-  id: "evento-1",
-  label: {
-    pt: "Serpente",
-    en: "Snake",
-  },
-  category: "cat_events",
-}, async function () {
-  for (let chapter = 1; chapter <= 7; chapter++) {
+  for (let i = 212401; i <= 212407; i++) {
 
     netManager.send("act.act_mini_game_result_c2s", {
-      act_type: 1076,
-      chapter_id: chapter,
+      act_type: 2124,
+      chapter_id: i,
       result: 1,
     });
 
